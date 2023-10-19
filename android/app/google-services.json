@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60211696330",
+    "project_id": "flash-chat-9903",
+    "storage_bucket": "flash-chat-9903.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60211696330:android:6ef3d08f1055e22db39a33",
+        "android_client_info": {
+          "package_name": "com.hydratech.flashchat_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDEwta-9gpuhgL9vgoe1EFFzNW7xpbp5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

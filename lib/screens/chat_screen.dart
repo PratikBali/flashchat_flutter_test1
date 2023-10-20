@@ -21,15 +21,16 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     super.initState();
-
     getCurrentUser();
   }
 
   void getCurrentUser() async {
     try {
       final user = await _auth.currentUser!;
+      print('user: $user');
       if (user != null) {
         loggedInUser = user;
+        print(loggedInUser.email);
       }
     } catch (e) {
       print(e);

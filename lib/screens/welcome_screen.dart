@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'login_screen.dart';
-import 'registration_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import './login_screen.dart';
+import './registration_screen.dart';
 import '../components/rounded_button.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -58,11 +58,18 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
                     height: 60.0,
                   ),
                 ),
-                TypewriterAnimatedTextKit(
-                  text: ['Flash Chat'],
-                  textStyle: TextStyle(
-                    fontSize: 45.0,
-                    fontWeight: FontWeight.w900,
+                Center(
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      TyperAnimatedText(
+                        'Flash Chat',
+                        textStyle: TextStyle(
+                          color: Colors.black,
+                          fontSize: 45.0,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -71,16 +78,18 @@ class _WelcomeScreenState extends State<WelcomeScreen> with SingleTickerProvider
               height: 48.0,
             ),
             RoundedButton(
-              'Log In',
-              Colors.lightBlueAccent,
-              () {
+              title: 'Log In',
+              colour: Colors.lightBlueAccent,
+              onPressed: () {
+                print('click Login');
                 Navigator.pushNamed(context, LoginScreen.id);
               },
             ),
             RoundedButton(
-              'Register',
-              Colors.blueAccent,
-              () {
+              title: 'Register',
+              colour: Colors.blueAccent,
+              onPressed: () {
+                print('click Register');
                 Navigator.pushNamed(context, RegistrationScreen.id);
               },
             ),

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 class RoundedButton extends StatelessWidget {
-  RoundedButton(this.title, this.colour, this.onPressed, {super.key});
+  RoundedButton({required this.title, required this.colour, required this.onPressed});
 
-  final Color colour;
   final String title;
+  final Color colour;
   final VoidCallback onPressed;
+
+  // Function clickMe() {
+  //   onPressed();
+  // }
 
   @override
   Widget build(BuildContext context) {

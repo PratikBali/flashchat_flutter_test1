@@ -12,7 +12,20 @@
           "package_name": "com.hydratech.flashchat_flutter"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "60211696330-2b1k0bn5fgb1gjl5q9kr387k0alhm86a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hydratech.flashchat_flutter",
+            "certificate_hash": "c28ccb30e704d79c7a93ba31119c549ab6e6f5fc"
+          }
+        },
+        {
+          "client_id": "60211696330-urd6v0oirtr8dhmursst4hdh91uvcvqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCDEwta-9gpuhgL9vgoe1EFFzNW7xpbp5k"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60211696330-urd6v0oirtr8dhmursst4hdh91uvcvqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
